@@ -1,0 +1,28 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background-color: #222222;
+}
+
+.navbar-default{
+	background-color: rgba(177, 185, 20, 1);
+}
+.navbar .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+	color:#333333;
+}
+.navbar{
+	margin-bottom: 0px;
+	border: 0px;
+	border-radius: 0px;
+}
+
+#content{
+	height:100%;
+	background-image:url(../img/beerpong_poster.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
