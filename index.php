@@ -27,8 +27,7 @@
          die($e->getMessage());
       }
 	  
-	  $pdo->exec("INSERT INTO Users (username, password, mail) VALUES (". $username .", " . $password . ", " . $mail . ")");
-		// $stmp = $pdo->prepare("INSERT INTO Users (username, password, mail) VALUES (?, ?, ?)");
+		$stmp = $pdo->prepare("INSERT INTO Users(username, password, mail) VALUES(:username, :password, :mail)");
 		// $stmp->execute(array(
 						// 'username' => $username,
 						// 'password' => $password,
@@ -43,8 +42,9 @@
 	// $mail = $_POST["InputMail"];
 	// $password = $_POST["InputPassword"];
 		
-		// $stmp->execute();
-	  
+		$stmp->execute(array(':username' => $username, ':password' => $password, ':mail' => $mail));
+		$affected_rows = $stmp->rowCount();
+	  echo $affected_rows;
 	}
 ?>
 
