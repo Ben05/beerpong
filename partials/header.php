@@ -18,8 +18,22 @@
         <li><a href="#">Rules</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+	<?php
+	if ($_SESSION["connected"] == false)
+	{
+		?>
         <li><a href="signup.php">Sign up</a></li>
-        <li><a href="#">Log in</a></li>
+        <li><a href="login.php">Log in</a></li>
+	<?php
+	}
+	else
+	{
+		?>
+		<li><a href="logout.php">Log out</a></li>
+		<?php
+	}
+	
+	?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
