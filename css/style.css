@@ -22,7 +22,7 @@ body{
 
 #content{
 	height:100%;
-	background-image:url(../img/beerpong_poster.jpg);
+	/*background-image:url(../img/beerpong_poster.jpg);*/
 	background-repeat:no-repeat;
 	background-size: cover;
 }

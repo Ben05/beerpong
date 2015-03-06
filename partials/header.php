@@ -18,7 +18,7 @@
         <li><a href="#">Rules</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign up</a></li>
+        <li><a href="signup.php">Sign up</a></li>
         <li><a href="#">Log in</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
